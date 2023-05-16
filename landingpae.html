@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shopping Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Shopping Website</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="products">
+            <h2>Products</h2>
+            <div class="product">
+                <img src="https://i.etsystatic.com/36626984/r/il/4c6860/4247574687/il_fullxfull.4247574687_3vs0.jpg" alt="Product Image" height=200 width=200>
+                <h3>Product 1</h3>
+                <p>Clouthing</p>
+                <button onclick="addToCart('Product 1')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2021/9/CM/HK/FR/14621395/modern-bedroom-cupboard-designing-500x500.jpg" alt="Product Image" height=200 width=200>
+                <h3>Product 2</h3>
+                <p>Furniture</p>
+                <button onclick="addToCart('Product 2')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2021/3/KO/QG/XG/3922575/all-grocery-items-500x500.jpg" alt="Product Image" height=200 width=200>
+                <h3>Product 3</h3>
+                <p>Grocery.</p>
+                <button onclick="addToCart('Product 3')">Add to Cart</button>
+            </div>
+        </section>
+
+        <section id="cart">
+            <h2>Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="total">Total: $0.00</p>
+            <button onclick="checkout()">Checkout</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
